@@ -1,0 +1,10 @@
+# This example config
+version: '3'
+
+services: 
+  nginx:
+    build: ./
+    volumes:
+      - ./log/nginx:/var/log/nginx
+    ports:
+      - 80:80
